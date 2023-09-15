@@ -30,7 +30,7 @@ const NavBar = () => {
             <ul className="flex ">
                 {navItems.map(({path, title})=>(
                     <li className="mx-2" key={path}>
-                        <NavLink href={path}>
+                        <NavLink href={path} activeClassName="text-blue-500" >
                         {title}
                         </NavLink>
                     </li>
