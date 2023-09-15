@@ -25,9 +25,9 @@ const navItems = [
 
 const NavBar = () => {
     return (
-        <nav className="flex justify-between" >
-            <h2> Ranjit NavLink </h2>
-            <ul className="flex ">
+        <nav className="flex items-center justify-between container mx-auto" >
+            <h2 className="text-2xl font-semibold"> Ranjit NavLink </h2>
+            <ul className="flex items-center justify-center ">
                 {navItems.map(({path, title})=>(
                     <li className="mx-2" key={path}>
                         <NavLink exact={'/'} href={path} activeClassName="text-blue-500" >
